@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/BBBBBBBHAPPYBBBBBBB/stm32/RoboMaster/RM_Test_Infantry/gimbalV/Core/Startup/startup_stm32f407ighx.s
+
