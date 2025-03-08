@@ -1,16 +1,30 @@
-# RoboMaster
-a repository of RoboMaster
-this is a RM-omni-sentinel version made by mc3545dada
-it have rudimentary function to control the chassis and gimbal
-the robot use 2*C-board in chassis and gimbal
+RoboMaster
+A repository for RoboMaster.
 
-use Clion+Stm32Cubemx to code
+This is the RM-omni-sentinel version created by mc3545dada.
 
-at chassis,MCU connect 4*M3508&C620(can1,id:1 2 3 4) to control  move and 1*GM6020(can2,id:1) to control its yaw motor, and 1*DR16 to receive the remote-control message by DT
+It has rudimentary functionality to control the chassis and gimbal.
 
-at gimbal,MCU connect 1*4310Motor(can1) to control pitch motor ,1*M2006&C610(can1) to Control 17mm provide and 2*M3508&C620(can1) to control 17mm shoot
+The robot uses 2 C-boards for the chassis and gimbal.
 
+Development Environment
+The code is developed using CLion and STM32CubeMX.
 
-at last,that just a version for training use the elementary function of STM32F407IGHX,so it maybe has lots of bugs and some place which is lack of elegant and well-maintained code
+Chassis
+In the chassis, the MCU is connected to:
 
-This is dedicated to commemorate the beginning of mc3545dada's journey into RoboMaster
+4 * M3508 motors and 1 * C620 motor (CAN1, IDs: 1, 2, 3, 4) to control movement.
+1 * GM6020 motor (CAN2, ID: 1) to control the yaw motor.
+1 * DR16 receiver to receive remote control messages via DT.
+Gimbal
+In the gimbal, the MCU is connected to:
+
+1 * 4310 motor (CAN1) to control the pitch motor.
+1 * M2006 motor and 1 * C610 motor (CAN1) to control the 17mm feeder.
+2 * M3508 motors and 1 * C620 motor (CAN1) to control the 17mm shooter.
+Notes
+This version is primarily for training purposes, utilizing the basic functionality of the STM32F407IGHX.
+
+It may contain bugs and areas with suboptimal or poorly maintained code.
+
+This project is dedicated to commemorate the beginning of mc3545dada's journey into RoboMaster.
