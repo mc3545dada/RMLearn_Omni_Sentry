@@ -1,3 +1,52 @@
+# RoboMaster
+
+一个为 RoboMaster 项目创建的仓库。
+
+这是由 `mc3545dada` 制作的 RM-omni-sentinel 版本，具备控制底盘和云台的基本功能。
+
+该机器人使用两个 C 板，分别用于底盘和云台控制。
+
+---
+
+## 🛠️ 开发环境
+
+本项目使用以下工具进行开发：
+
+- [CLion](https://www.jetbrains.com/clion/)
+- [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
+
+---
+
+## 🚗 底盘（Chassis）
+
+在底盘部分，MCU 与以下设备连接：
+
+- **4 个 M3508 电机** + **1 个 C620 电调** （CAN1，总线 ID：1, 2, 3, 4）用于移动控制  
+- **1 个 GM6020 电机**（CAN2，ID：1）用于 Yaw 轴控制  
+- **1 个 DR16 接收机**：通过 DT 协议接收遥控器数据
+
+---
+
+## 🎯 云台（Gimbal）
+
+在云台部分，MCU 与以下设备连接：
+
+- **1 个 4310 电机**（CAN1）：控制 Pitch 轴  
+- **1 个 M2006 电机** + **1 个 C610 电调**（CAN1）：控制 17mm 弹丸送料器  
+- **2 个 M3508 电机** + **1 个 C620 电调**（CAN1）：控制 17mm 弹丸射击装置  
+
+---
+
+## 📌 说明（Notes）
+
+- 本版本主要用于训练目的，基于 STM32F407IGHX 的基本功能实现。
+- 项目中可能存在 **Bug** 或 **代码维护不佳/结构不合理** 的情况。
+- 本项目旨在纪念 `mc3545dada` 进入 RoboMaster 领域的起点。
+
+---
+---
+---
+
 RoboMaster
 A repository for RoboMaster.
 
